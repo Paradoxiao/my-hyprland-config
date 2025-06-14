@@ -1,0 +1,119 @@
+{
+  "layer": "bottom",
+  "position": "top",
+  "mode": "dock",
+  "start_hidden": false,
+  "modules-left": [
+    "hyprland/workspaces"
+  ],
+  "modules-center": [
+    "clock"
+  ],
+  "modules-right": [
+    "network",
+    "tray",
+    "pulseaudio",
+    "cpu",
+    "memory",
+    "power-profiles-daemon",
+    "battery"
+  ],
+  "hyprland/workspaces": {
+    "format": " {name} ",
+    "persistent-workspaces": {
+      "*": 4
+    }
+  },
+  "battery": {
+    "format": "{capacity}% {icon}",
+    "format-icons": [
+      " ",
+      " ",
+      " ",
+      " ",
+      " "
+    ],
+    "on-click": "kitty btop"
+  },
+  "power-profiles-daemon": {
+    "format": "{icon}",
+    "tooltip-format": "Power profile: {profile}",
+    "tooltip": true,
+    "format-icons": {
+      "performance": "  ",
+      "balanced": "  ",
+      "power-saver": "  "
+    }
+  },
+  "network": {
+    "format": "   {bandwidthDownBytes}    {bandwidthUpBytes} ",
+    "format-alt": " {essid} ({signalStrength}%)   ",
+    "tooltip": true,
+    "max-length": 50
+  },
+  "pulseaudio": {
+    "format": "{volume}% {icon}",
+    "format-icons": {
+      "headphone": " ",
+      "hands-free": " ",
+      "headset": " ",
+      "phone": " ",
+      "portable": " ",
+      "car": " ",
+      "default": [
+        " ",
+        " ",
+        " "
+      ]
+    },
+    "on-click": "pavucontrol"
+  },
+  "clock": {
+    "format": " {:%m-%d   %H:%M} ",
+    "format-alt": " {:%A, %B %d, %Y %R} ",
+    "tooltip": true,
+    "tooltip-format": "<tt>{calendar}</tt>",
+    "calendar": {
+      "mode": "month",
+      "mode-mon-col": 4,
+      "on-scroll": 1,
+      "format": {
+        "months": "<span color='#ffead3'><b>{}</b></span>",
+        "days": "<span color='#ecc6d9'><b>{}</b></span>",
+        "weeks": "<span color='#99ffdd'><b>W{}</b></span>",
+        "weekdays": "<span color='#ffcc66'><b>{}</b></span>",
+        "today": "<span color='#ff6699'><b><u>{}</u></b></span>"
+      }
+    },
+    "actions": {
+      "on-click-right": "mode",
+      "on-scroll-up": "shift_down",
+      "on-scroll-down": "shift_up"
+    }
+  },
+  "cpu": {
+    "format": "{usage}%  ",
+    "tooltip": true
+  },
+  "memory": {
+    "format": "{}%  "
+  },
+  "backlight": {
+    "format": "{percent}% {icon}",
+    "format-icons": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ]
+  },
+  "tray": {
+    // "icon-size": 17,
+    "spacing": 10
+  }
+}
