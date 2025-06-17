@@ -1,12 +1,13 @@
 * {
     border: none;
     border-radius: 0;
-    font-family: JetBrainsMono Nerd Font,Source Han Sans CN;
+    font-family: JetBrainsMono Nerd Font, Source Han Sans CN;
     font-size: 17px;
     font-weight: bold;
     box-shadow: none;
     text-shadow: none;
     transition-duration: 0s;
+    background: rgba(34, 36, 54, 0.9);
 }
 
 widget label {
@@ -18,21 +19,16 @@ widget label {
 
 window {
     color: rgba(217, 216, 216, 1);
-    background: rgba(34, 36, 54, 0.9);
 }
 
-window#waybar.solo {
-    background: rgba(1, 1, 1, 0.40);
-}
+/* window#waybar.solo { */
+/*     background: rgba(1, 1, 1, 0.40); */
+/* } */
 
-#workspaces {
-    background: rgba(40, 42, 54, 0.85);
-}
+/* #workspaces {} */
 
 #workspaces button {
-    transition: none;
     color: rgba(217, 216, 216, 0.4);
-    background: transparent;
 }
 
 #workspaces button.visible {
@@ -45,10 +41,10 @@ window#waybar.solo {
 }
 
 #workspaces button:hover {
-    border-top: 3px solid #ff79c6;
     transition: none;
     box-shadow: inherit;
     text-shadow: inherit;
+    /* border: 1px solid #12dada; */
     color: #ff79c6;
 }
 
@@ -67,7 +63,8 @@ window#waybar.solo {
 #network,
 #pulseaudio,
 #backlight,
-#power-profiles-daemon {
+#power-profiles-daemon,
+#custom-brightness {
     min-width: 25px;
 }
 
@@ -93,6 +90,11 @@ window#waybar.solo {
     background: #c099ff;
 }
 
+#custom-brightness {
+    color: #4d4d4d;
+    background: #ff79c6
+}
+
 #cpu {
     color: #4d4d4d;
     background: #ffc777;
@@ -101,8 +103,20 @@ window#waybar.solo {
 #power-profiles-daemon {
     padding-left: 0px;
     padding-right: 5px;
-    color: #4d4d4d;
-    background: #fca7ea;
+    border-radius: 0px;
+    /* color: rgba(217, 216, 216, 1); */
+}
+
+#power-profiles-daemon.performance {
+    color: #ff757f;
+}
+
+#power-profiles-daemon.balanced {
+    color: #1793d1;
+}
+
+#power-profiles-daemon.power-saver {
+    color: #00ff00;
 }
 
 #battery {
@@ -116,9 +130,6 @@ window#waybar.solo {
 }
 
 #tray {
-    margin-left: 10px;
-    border-radius: 20px;
-    padding: 10px;
+    padding-left: 10px;
     color: #4d4d4d;
-    background: #3e68d7;
 }
