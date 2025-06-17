@@ -34,7 +34,7 @@
       " ",
       " "
     ],
-    "on-click": "kitty btop"
+    "on-click": "kitty --app-id __floating__ btop"
   },
   "power-profiles-daemon": {
     "format": "{icon}",
@@ -48,8 +48,9 @@
   },
   "network": {
     "format": "   {bandwidthDownBytes}    {bandwidthUpBytes} ",
-    "format-alt": " {essid} ({signalStrength}%)   ",
     "tooltip": true,
+    "tooltip-format": " {essid} ({signalStrength}%)   ",
+    "on-click": "kitty --app-id __floating__ nmtui-connect",
     "max-length": 50,
     "interval": 1
   },
@@ -118,7 +119,9 @@
     "exec": "brightnessctl get",
     "interval": 2,
     "on-scroll-up": "brightnessctl set 10+",
-    "on-scroll-down": "brightnessctl set 10-"
+    "on-scroll-down": "brightnessctl set 10-",
+    "on-click": "brightnessctl set 100",
+    "on-click-right": "brightnessctl set 0"
   },
   "tray": {
     "icon-size": 17,
