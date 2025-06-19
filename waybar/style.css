@@ -101,17 +101,17 @@ color: rgba(217, 216, 216, 1);
 /* background: #82aaff; */
 }
 
-#battery.warning {
-    color: rgba(255, 210, 4, 1);
-}
-
-#battery.critical {
-    color: rgba(238, 46, 36, 1);
-}
-
-#battery.charging {
-    color: rgba(217, 216, 216, 1);
-}
+/* #battery.warning { */
+/*     color: rgba(255, 210, 4, 1); */
+/* } */
+/**/
+/* #battery.critical { */
+/*     color: rgba(238, 46, 36, 1); */
+/* } */
+/**/
+/* #battery.charging { */
+/*     color: rgba(217, 216, 216, 1); */
+/* } */
 
 #pulseaudio {
     color: rgba(217, 216, 216, 1);
