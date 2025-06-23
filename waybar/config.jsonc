@@ -125,6 +125,7 @@
   },
   "tray": {
     "icon-size": 17,
-    "spacing": 10
+    "spacing": 10,
+    "interval": 1
   }
 }
