@@ -60,16 +60,15 @@
       "headphone": " ",
       "hands-free": " ",
       "headset": " ",
-      "phone": " ",
-      "portable": " ",
-      "car": " ",
       "default": [
         " ",
         " ",
         " "
       ]
     },
-    "on-click": "pavucontrol"
+    "on-click": "playerctl next",
+    "on-click-right": "playerctl previous"
+    // "on-click": "pavucontrol"
   },
   "clock": {
     "format": " {:%m-%d   %H:%M} ",
