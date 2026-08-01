@@ -7,7 +7,10 @@
     box-shadow: none;
     text-shadow: none;
     transition-duration: 0s;
-    background: rgba(34, 36, 54, 0.9);
+}
+
+#waybar {
+    background: rgba(34, 36, 54, 0.8);
 }
 
 widget label {
@@ -29,26 +32,10 @@ widget label {
     color: #00ff00;
 }
 
-/* window#waybar.solo { */
-/*     background: rgba(1, 1, 1, 0.40); */
-/* } */
-
-/* #workspaces {} */
-
-/* #workspaces button.focused { */
-/*     border-top: 3px solid #9aedfe; */
-/*     color: #9aedfe; */
-/* } */
-
-/* #workspaces button.urgent { */
-/*     color: rgba(238, 46, 36, 1); */
-/* } */
-
 #workspaces button:hover {
     transition: none;
     box-shadow: inherit;
     text-shadow: inherit;
-    /* border: 1px solid #12dada; */
     color: #ff79c6;
 }
 
@@ -56,7 +43,6 @@ widget label {
     padding-left: 0px;
     padding-right: 5px;
     border-radius: 0px;
-    /* color: rgba(217, 216, 216, 1); */
 }
 
 
@@ -85,65 +71,4 @@ color: rgba(217, 216, 216, 0.4);
 
 #workspaces button.visible {
 color: rgba(217, 216, 216, 1);
-}
-
-#clock {
-    color: rgba(217, 216, 216, 1);
-    background: rgba(34, 36, 54, 0.9);
-    /* color: #4d4d4d; */
-    /* background: #4fd6be; */
-}
-
-#network {
-    color: rgba(217, 216, 216, 1);
-    background: rgba(34, 36, 54, 0.9);
-/* color: #4d4d4d; */
-/* background: #82aaff; */
-}
-
-/* #battery.warning { */
-/*     color: rgba(255, 210, 4, 1); */
-/* } */
-/**/
-/* #battery.critical { */
-/*     color: rgba(238, 46, 36, 1); */
-/* } */
-/**/
-/* #battery.charging { */
-/*     color: rgba(217, 216, 216, 1); */
-/* } */
-
-#pulseaudio {
-    color: rgba(217, 216, 216, 1);
-    background: rgba(34, 36, 54, 0.9);
-    /* color: #4d4d4d; */
-    /* background: #c099ff; */
-}
-
-#custom-brightness {
-    color: rgba(217, 216, 216, 1);
-    background: rgba(34, 36, 54, 0.9);
-    /* color: #4d4d4d; */
-    /* background: #ff79c6 */
-}
-
-#cpu {
-    color: rgba(217, 216, 216, 1);
-    background: rgba(34, 36, 54, 0.9);
-    /* color: #4d4d4d; */
-    /* background: #ffc777; */
-}
-
-#battery {
-    color: rgba(217, 216, 216, 1);
-    background: rgba(34, 36, 54, 0.9);
-    /* color: #4d4d4d; */
-    /* background: #ff757f; */
-}
-
-#memory {
-    color: rgba(217, 216, 216, 1);
-    background: rgba(34, 36, 54, 0.9);
-    /* color: #4d4d4d; */
-    /* background: #c3e88d; */
 }
