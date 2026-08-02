@@ -96,7 +96,7 @@
   "cpu": {
     "format": "{usage}%  ",
     "tooltip": true,
-    "on-click": "printf \"poweroff\\nreboot\" | wofi --dmenu -c ~/.config/hypr/wofi/config -s ~/.config/hypr/wofi/style.css | sh"
+    "on-click": "~/.config/hypr/scripts/shutdown.fish"
   },
   "memory": {
     "format": "{}%  "
