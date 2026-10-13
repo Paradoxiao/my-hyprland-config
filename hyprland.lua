@@ -235,3 +235,9 @@ hl.device({
 	name = "epic-mouse-v1",
 	sensitivity = -0.5,
 })
+
+-- For Noctalia Color templates
+require("noctalia").apply_theme()
+require("noctalia/autostart")
+require("noctalia/binds")
+require("noctalia/windowrules")
