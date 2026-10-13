@@ -9,9 +9,9 @@
 -- Create your files separately and then require them like this:
 -- require("myColors")
 
-require("binds")
-require("windowrules")
-require("autostart")
+-- require("binds")
+-- require("windowrules")
+-- require("autostart")
 
 ------------------
 ---- MONITORS ----
@@ -29,7 +29,7 @@ hl.config({
 		force_zero_scaling = true,
 	},
 })
-hl.env("GDK_SCALE", "2")
+hl.env("GDK_SCALE", "1.25")
 
 -------------------------------
 ---- ENVIRONMENT VARIABLES ----
