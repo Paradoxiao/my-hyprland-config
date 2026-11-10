@@ -242,3 +242,4 @@ hl.device({
 -- For Noctalia Color templates
 require("noctalia").apply_theme()
 require("noctalia.setup")
+require("plugins.setup")
