@@ -238,6 +238,4 @@ hl.device({
 
 -- For Noctalia Color templates
 require("noctalia").apply_theme()
-require("noctalia/autostart")
-require("noctalia/binds")
-require("noctalia/windowrules")
+require("noctalia.setup")
